@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>	
+		<style>
+			body{
+				background-color:#373737;
+				
+			}
+			#maintitle{
+				color: #5180F0;
+				text-shadow: none;
+			}
+			.title{
+				font-size: 25px;
+			  color: #5180F0;
+			  text-shadow:
+			  0 0 7px #5180F0,
+			  0 0 10px #5180F0,
+			  0 0 21px #5180F0,
+			  0 0 42px #7D9FF4,
+			  0 0 82px #7D9FF4,
+			  0 0 92px #7D9FF4,
+			  0 0 102px #7D9FF4,
+			  0 0 151px #7D9FF4;
+			}
+			p{
+				color: white;
+			}
+			p::first-letter {
+				font-size: 150%;
+			}
+			li{
+				color: white;
+			}
+			#rcount{
+				counter-reset: reversed(section);
+				counter-set: section 6;
+			}
+			#rcount > p::before {
+				counter-increment: section -1;
+				content: "Section " counter(section) ": ";
+			}
+			.moodsflex > div {
+			  margin: 12px;
+			}
+			.moodsflex{
+				
+				display: flex; 
+				flex-direction: rows;
+			}
+			.mtag{
+				color: #FC9B79;
+				font-family: "Times New Roman", Times, serif;
+				font-weight: bold;
+				text-decoration: none;
+				
+			}
+			.mtag:hover {
+				text-decoration: underline;
+			}
+			#moodthink{
+					font-size: 25px;
+					color: #fff;
+				    text-shadow:
+					0 0 7px #fff,
+					0 0 10px #fff,
+					0 0 21px #fff,
+					0 0 42px #0fa,
+					0 0 82px #0fa,
+					0 0 92px #0fa,
+					0 0 102px #0fa,
+					0 0 151px #0fa;
+
+			}
+			
+		</style>
+    </head>
+    <body>
+		<div>
+			<h1 class="title" id="maintitle">About Mehmet Alp BASTURK</h1>
+			<p> My name is Alp and I am a realist<span style="font-size: 25px;"> & </span>mostly a peacefull person. </p>
+			<hr style="height:2px;border-width:0;color:gray;background-color:gray">		
+		</div>
+		<div>
+		<h2 class="title">My Classes</h2>		
+			<ul>
+				<li>STC Pt 1- ComPro (Science and Technology of Consciousness)</li>
+				<li>Modern Programming Practices</li>
+				<li>Web Programming</li>	
+				<li>Web Application Architecture</li>		
+				<li>Advanced Software Development</li>
+				<li>Enterprise Architecture</li>
+				<li>STC Pt2 Leadership for Tech Managers</li>
+				<li>Career Strategies for Information Technology</li>
+			</ul>
+		</div>
+		<div>
+		<h2 class="title">My Favourite Movies</h2>		
+			<div id="rcount">
+				<p>Shutter Island <a href="https://www.imdb.com/title/tt1130884/" class="mtag">IMDB</a></p>
+				<p>Law Abiding Citizen <a href="https://www.imdb.com/title/tt1197624/" class="mtag">IMDB</a></p>
+				<p>The Avengers <a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)" class="mtag">Wiki</a></p>	
+				<p>The Green Mile <a href="https://www.imdb.com/title/tt0120689/" class="mtag">IMDB</a></p>		
+				<p>Green Street Hooligans <a href="https://www.imdb.com/title/tt0385002/" class="mtag">IMDB</a></p>
+			</div>
+		</div>
+		<div>
+		<h2 class="title">My Moods</h2>
+		<div class="moodsflex">
+			<div>
+				<img src="./img/thinker.jpg"  alt="HeadShot" width="125" height="150" >
+				<p id="moodthink">Thoughtfull</p>
+			</div>
+			<div>
+				<img src="./img/chiller.jpg"  alt="HeadShot" width="125" height="150" >
+				<p id="moodthink">Restfull</p>
+			</div>
+		</div>
+		<div>
+		<h2 class="title">Fun facts about my neighbors</h2>		
+			<ul>
+				<li>I dont know</li>
+				<li>much about</li>
+				<li>my neighbors</li>
+				
+			</ul>
+		</div>
+		
+		
+		</div>
+		<div class="moodsflex">
+			<a href="https://validator.w3.org/nu/?doc=https://mabasturk2.github.io/aboutme.html">
+				<img src="./img/html-checker.png" alt="html validator"/>
+			</a>
+			<a href="https://validator.w3.org/nu/?doc=https://mabasturk2.github.io/aboutme.html">
+				<img src="./img/css-checker.png" alt="css validator"/>
+			</a>
+		</div>
+		
+    </body>
+</html>
