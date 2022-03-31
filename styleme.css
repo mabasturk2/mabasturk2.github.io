@@ -1,1 +1,70 @@
-null
+			body{
+				background-color:#373737;
+				
+			}
+			#maintitle{
+				color: #5180F0;
+				text-shadow: none;
+			}
+			.title{
+				font-size: 25px;
+			  color: #5180F0;
+			  text-shadow:
+			  0 0 7px #5180F0,
+			  0 0 10px #5180F0,
+			  0 0 21px #5180F0,
+			  0 0 42px #7D9FF4,
+			  0 0 82px #7D9FF4,
+			  0 0 92px #7D9FF4,
+			  0 0 102px #7D9FF4,
+			  0 0 151px #7D9FF4;
+			}
+			p{
+				color: white;
+			}
+			p::first-letter {
+				font-size: 150%;
+			}
+			li{
+				color: white;
+			}
+			#rcount{
+				counter-reset: reversed(section);
+				counter-set: section 6;
+			}
+			#rcount > p::before {
+				counter-increment: section -1;
+				content: "Section " counter(section) ": ";
+			}
+			.moodsflex > div {
+			  margin: 12px;
+			}
+			.moodsflex{
+				
+				display: flex; 
+				flex-direction: row;
+			}
+			.mtag{
+				color: #FC9B79;
+				font-family: "Times New Roman", Times, serif;
+				font-weight: bold;
+				text-decoration: none;
+				
+			}
+			.mtag:hover {
+				text-decoration: underline;
+			}
+			#moodthink{
+					font-size: 25px;
+					color: #fff;
+				    text-shadow:
+					0 0 7px #fff,
+					0 0 10px #fff,
+					0 0 21px #fff,
+					0 0 42px #0fa,
+					0 0 82px #0fa,
+					0 0 92px #0fa,
+					0 0 102px #0fa,
+					0 0 151px #0fa;
+
+			}

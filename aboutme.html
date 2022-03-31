@@ -2,79 +2,10 @@
 <html>
     <head>
         <title>About Me</title>	
-		<style>
-			body{
-				background-color:#373737;
-				
-			}
-			#maintitle{
-				color: #5180F0;
-				text-shadow: none;
-			}
-			.title{
-				font-size: 25px;
-			  color: #5180F0;
-			  text-shadow:
-			  0 0 7px #5180F0,
-			  0 0 10px #5180F0,
-			  0 0 21px #5180F0,
-			  0 0 42px #7D9FF4,
-			  0 0 82px #7D9FF4,
-			  0 0 92px #7D9FF4,
-			  0 0 102px #7D9FF4,
-			  0 0 151px #7D9FF4;
-			}
-			p{
-				color: white;
-			}
-			p::first-letter {
-				font-size: 150%;
-			}
-			li{
-				color: white;
-			}
-			#rcount{
-				counter-reset: reversed(section);
-				counter-set: section 6;
-			}
-			#rcount > p::before {
-				counter-increment: section -1;
-				content: "Section " counter(section) ": ";
-			}
-			.moodsflex > div {
-			  margin: 12px;
-			}
-			.moodsflex{
-				
-				display: flex; 
-				flex-direction: rows;
-			}
-			.mtag{
-				color: #FC9B79;
-				font-family: "Times New Roman", Times, serif;
-				font-weight: bold;
-				text-decoration: none;
-				
-			}
-			.mtag:hover {
-				text-decoration: underline;
-			}
-			#moodthink{
-					font-size: 25px;
-					color: #fff;
-				    text-shadow:
-					0 0 7px #fff,
-					0 0 10px #fff,
-					0 0 21px #fff,
-					0 0 42px #0fa,
-					0 0 82px #0fa,
-					0 0 92px #0fa,
-					0 0 102px #0fa,
-					0 0 151px #0fa;
-
-			}
-			
-		</style>
+		    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleme.css">
     </head>
     <body>
 		<div>
@@ -99,6 +30,19 @@
 		<h2 class="title">My Favourite Movies</h2>		
 			<div id="rcount">
 				<p>Shutter Island <a href="https://www.imdb.com/title/tt1130884/" class="mtag">IMDB</a></p>
+					<dl style="color: white; margin-left:10px">
+						<dt>Director</dt>
+						<dd>Martin Scorsese</dd>
+
+						<dt>Genres</dt>
+						<dd>Thriller</dd>
+						<dd>Mystery</dd>
+
+						<dt>Stars</dt>
+						<dd>Leonardo DiCaprio</dd>
+						<dd>Emily Mortimer</dd>
+						<dd>Mark Ruffalo</dd>
+					</dl>
 				<p>Law Abiding Citizen <a href="https://www.imdb.com/title/tt1197624/" class="mtag">IMDB</a></p>
 				<p>The Avengers <a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)" class="mtag">Wiki</a></p>	
 				<p>The Green Mile <a href="https://www.imdb.com/title/tt0120689/" class="mtag">IMDB</a></p>		
@@ -109,11 +53,11 @@
 		<h2 class="title">My Moods</h2>
 		<div class="moodsflex">
 			<div>
-				<img src="./img/thinker.jpg"  alt="HeadShot" width="125" height="150" >
+				<img src="./img/thinker.jpg"  alt="thoughtfull" width="125" height="150" >
 				<p id="moodthink">Thoughtfull</p>
 			</div>
 			<div>
-				<img src="./img/chiller.jpg"  alt="HeadShot" width="125" height="150" >
+				<img src="./img/chiller.jpg"  alt="restfull" width="125" height="150" >
 				<p id="moodthink">Restfull</p>
 			</div>
 		</div>
