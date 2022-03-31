@@ -29,7 +29,7 @@
 				color: white;
 			}
 			#rcount{
-				counter-reset: reversed(section);
+				counter-reset: section;
 				counter-set: section 6;
 			}
 			#rcount > p::before {
